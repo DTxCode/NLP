@@ -1,0 +1,8 @@
+Got perplexity 44478.54388440791 for test file 1 with alpha=0.1
+Got perplexity 49618.80404668946 for test file 1 with alpha=0.3
+Got perplexity 16555.108280702098 for test file 2 with alpha=0.1
+Got perplexity 29217.4172716452 for test file 2 with alpha=0.3
+
+Due to the lower perplexity values, our model predicts test file 2 better. Looking at the two different alpha values, it seems that for test file 1,
+where our model wasn't very effective, changing the alpha value didn't make much of a difference. For test file 2 however one of the alpha values had
+nearly half the resulting perplexity of the other one, suggesting the important of identifing/choosing the right alpha value.

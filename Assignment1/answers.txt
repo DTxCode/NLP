@@ -60,6 +60,8 @@ Posterior Probabilities:
 The most likely class for D1 is drama and the most likely class for D2 is action.
 
 2) ===================================================================
+All code is located in Problem2/problem2.py
+
 2.1)
     1. [The, DT, company, NN, of, IN, directors, NNS]
     2. [Several, JJ, loose, JJ, creaked, VBD, as, IN]
@@ -84,3 +86,12 @@ The following values are the count of words from the Bag-of-Words in the sample 
 
  I chose the F-Test because it's suitable for classification feature selection. It compares models
  with and without the features by running an F-Test and thus chooses which features are more important.
+
+3) ========================================================================
+
+3.4) 
+Linear interpolation had the benefit of identifying the proper lambda values using the hold-out set, whereas add-alpha smoothing
+seemed to be dependent on the right alpha value being chosen ahead of time.
+
+On the other hand, because linear interpolation needs a hold-out set to identify lambda values, add-alpha smoothing was able to train on a larger
+data set, which may make it a more accurate model in the end, if as we said the right alpha value is chosen.

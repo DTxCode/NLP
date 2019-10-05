@@ -1,0 +1,38 @@
+Got hold-out set perplexity 235.53501958853388 with lambdas [0.1, 0.1, 0.8]
+Got hold-out set perplexity 197.3728194133479 with lambdas [0.1, 0.2, 0.7]
+Got hold-out set perplexity 178.43674514116577 with lambdas [0.1, 0.3, 0.6]
+Got hold-out set perplexity 167.37865856575326 with lambdas [0.1, 0.4, 0.5]
+Got hold-out set perplexity 160.82551083210564 with lambdas [0.1, 0.5, 0.4]
+Got hold-out set perplexity 157.5350251592823 with lambdas [0.1, 0.6, 0.3]
+Got hold-out set perplexity 157.28927900400922 with lambdas [0.1, 0.7, 0.2]
+Got hold-out set perplexity 161.10656299152495 with lambdas [0.1, 0.8, 0.1]
+Got hold-out set perplexity 202.48707300061594 with lambdas [0.2, 0.1, 0.7]
+Got hold-out set perplexity 174.6934318562438 with lambdas [0.2, 0.2, 0.6]
+Got hold-out set perplexity 160.64885918855927 with lambdas [0.2, 0.3, 0.5]
+Got hold-out set perplexity 152.7488966809128 with lambdas [0.2, 0.4, 0.4]
+Got hold-out set perplexity 148.72928487819723 with lambdas [0.2, 0.5, 0.3]
+Got hold-out set perplexity 148.009908961451 with lambdas [0.2, 0.6, 0.2]
+Got hold-out set perplexity 187.5629736007395 with lambdas [0.3, 0.1, 0.6]
+Got hold-out set perplexity 165.29854498916086 with lambdas [0.3, 0.2, 0.5]
+Got hold-out set perplexity 154.25882037386086 with lambdas [0.3, 0.3, 0.4]
+Got hold-out set perplexity 148.71191357232598 with lambdas [0.3, 0.4, 0.3]
+Got hold-out set perplexity 147.1886926606711 with lambdas [0.3, 0.5, 0.2]
+Got hold-out set perplexity 180.67568346329915 with lambdas [0.4, 0.1, 0.5]
+Got hold-out set perplexity 162.21422172205817 with lambdas [0.4, 0.2, 0.4]
+Got hold-out set perplexity 153.72562353819532 with lambdas [0.4, 0.3, 0.3]
+Got hold-out set perplexity 150.82290352575697 with lambdas [0.4, 0.4, 0.2]
+Got hold-out set perplexity 153.37775903057695 with lambdas [0.4, 0.5, 0.1]
+Got hold-out set perplexity 179.19642022154477 with lambdas [0.5, 0.1, 0.4]
+Got hold-out set perplexity 163.95568614689736 with lambdas [0.5, 0.2, 0.3]
+Got hold-out set perplexity 158.43813744067435 with lambdas [0.5, 0.3, 0.2]
+Got hold-out set perplexity 160.07745138268135 with lambdas [0.5, 0.4, 0.1]
+Got hold-out set perplexity 182.77674137939968 with lambdas [0.6, 0.1, 0.3]
+Got hold-out set perplexity 171.14606257997588 with lambdas [0.6, 0.2, 0.2]
+Got hold-out set perplexity 192.9200106308674 with lambdas [0.7, 0.1, 0.2]
+Got hold-out set perplexity 215.45909406618688 with lambdas [0.8, 0.1, 0.1]
+Using lambdas [0.3, 0.5, 0.2] because they gave the smallest perplexity against the hold-out set
+Got perplexity 592.2073170280643 for test file 1
+Got perplexity 140.4407316691767 for test file 2
+
+Test file 2 matches our language model better because it has a much lower perplexity. Given our training set, this means
+it has a more natural/grammatically correct structure.
