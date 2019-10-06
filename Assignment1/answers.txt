@@ -95,3 +95,31 @@ seemed to be dependent on the right alpha value being chosen ahead of time.
 
 On the other hand, because linear interpolation needs a hold-out set to identify lambda values, add-alpha smoothing was able to train on a larger
 data set, which may make it a more accurate model in the end, if as we said the right alpha value is chosen.
+
+4) ===============================================
+
+4.4) Here's an example of 5 generated sentences:
+Generated Sentence:
+``/`` <UNK>/np$-tl largest/jjt (/( that/cs kitty's/np+bez ecumenical/jj white/jj-tl much/ap-tl trade/nn-tl 2/cd-hl with/in-hl quick/rb-hl of/in are/ber best/rbt went/vbd head/jjs angry/jj these/dts <UNK>/nps just/rb what's/wdt+bez her/pp$ )/) was/bedz :/: of/in-hl 3/cd-hl ``/`` would/md this/dt further/rbr some/dti '/' in/in-hl states/nns-tl-hl un/nn-hl that/cs it's/pps+bez not/* ./.
+Sentence Probability:
+5.675370443950605e-168
+
+Generated Sentence:
+as/cs has/hvz so/ql --/-- and/cc her/pp$ <UNK>/jjr ,/, let's/vb+ppo have/hv <UNK>/np have/hv all/abn :/: wright's/np$-hl format/nn-hl green/jj-hl lids/nns-hl not/* more/ql main/jjs <UNK>/nps they/ppss ,/, i'll/ppss+md a/at ''/'' happens/vbz own/jj do/do when/wrb old/jj united/vbn-tl ''/'' do/do both/abx united/vbn-tl gave/vbd both/abx were/bed up/rp :/: does/doz do/do ./.
+Sentence Probability:
+1.0440683482693658e-166
+
+Generated Sentence:
+some/dti not/* it/ppo to/to famous/jj ./.
+Sentence Probability:
+6.573494032561587e-23
+
+Generated Sentence:
+some/dti ;/.
+Sentence Probability:
+8.832696171176843e-08
+
+Generated Sentence:
+of/in <UNK>/fw-nn held/vbd main/jjs older/jjr title/nn-tl can/md ``/`` he/pps-nc here/rb-nc organism/nn quite/abl ?/.
+Sentence Probability:
+1.263805872817303e-55
