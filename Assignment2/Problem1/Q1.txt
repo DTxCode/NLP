@@ -1,0 +1,13 @@
+1.1.1:
+The dataset has 78052 sentences.
+
+1.1.2:
+There are 115603 verbs in the dataset based on the Spacy POS "VERB". Average per sentence: 1.48110234203
+
+1.1.3:
+There are 74813 prepositions in the dataset based on the Spacy dependency label "prep". Three most common prepositions: ['of', 'for', 'in'].
+
+1.1.4:
+There are 38760 recognized entities in the corpus. 
+Unique entity lables: ['ORDINAL', 'LOC', 'PRODUCT', 'NORP', 'WORK_OF_ART', 'LANGUAGE', 'PERCENT', 'GPE', 'MONEY',
+'PERSON', 'FAC', 'CARDINAL', 'TIME', 'DATE', 'ORG', 'LAW', 'EVENT', 'QUANTITY']
