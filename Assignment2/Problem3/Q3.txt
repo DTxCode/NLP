@@ -1,0 +1,99 @@
+3.1
+To optimize my parameters I first tested different activation functions with 10 nodes in the first hidden layer.
+The best resulting function (based on accuracy) was the identity function. I then proceeded to test different number of nodes
+in the first hidden layer (1-10). Ultimately 1 node in the first hidden layer returned the best accuracy based on the cross-validation process, with a 
+score of 0.9462. The data is listed below:
+
+Average cross validation score using activation function relu and 10 nodes in the first hidden layer was 0.9452999999999999
+Average cross validation score using activation function tanh and 10 nodes in the first hidden layer was 0.9453999999999999
+Average cross validation score using activation function identity and 10 nodes in the first hidden layer was 0.9459
+Average cross validation score using activation function logistic and 10 nodes in the first hidden layer was 0.9449
+
+Average cross validation score using activation function identity and 1 nodes in the first hidden layer was 0.9461999999999999
+Average cross validation score using activation function identity and 2 nodes in the first hidden layer was 0.9456999999999999
+Average cross validation score using activation function identity and 3 nodes in the first hidden layer was 0.9456
+Average cross validation score using activation function identity and 4 nodes in the first hidden layer was 0.9456
+Average cross validation score using activation function identity and 5 nodes in the first hidden layer was 0.9452
+Average cross validation score using activation function identity and 6 nodes in the first hidden layer was 0.9452
+Average cross validation score using activation function identity and 7 nodes in the first hidden layer was 0.9456
+Average cross validation score using activation function identity and 8 nodes in the first hidden layer was 0.9457000000000001
+Average cross validation score using activation function identity and 9 nodes in the first hidden layer was 0.9442
+
+3.2
+The accuracy of predicting the whole training set after training on the whole training set was 1.0
+
+3.3
+To optimize my parameters I first tested different activation functions with 10 nodes in the first hidden layer.
+The best resulting function (based on accuracy) was the logistic function. I then proceeded to test different number of nodes
+in the first hidden layer (1-10). Ultimately 8 nodes in the first hidden layer returned the best accuracy based on the cross-validation process, 
+with a score of 0.911. The data is listed below:
+
+Average cross validation score using activation function identity and 10 nodes in the first hidden layer was 0.9080999999999999
+Average cross validation score using activation function logistic and 10 nodes in the first hidden layer was 0.9111
+Average cross validation score using activation function tanh and 10 nodes in the first hidden layer was 0.9079
+Average cross validation score using activation function relu and 10 nodes in the first hidden layer was 0.9096000000000002
+
+Average cross validation score using activation function logistic and 1 nodes in the first hidden layer was 0.9090000000000001
+Average cross validation score using activation function logistic and 2 nodes in the first hidden layer was 0.9094
+Average cross validation score using activation function logistic and 3 nodes in the first hidden layer was 0.9100000000000001
+Average cross validation score using activation function logistic and 4 nodes in the first hidden layer was 0.9104999999999999
+Average cross validation score using activation function logistic and 5 nodes in the first hidden layer was 0.9099
+Average cross validation score using activation function logistic and 6 nodes in the first hidden layer was 0.9099999999999999
+Average cross validation score using activation function logistic and 7 nodes in the first hidden layer was 0.9105000000000001
+Average cross validation score using activation function logistic and 8 nodes in the first hidden layer was 0.9110000000000001
+Average cross validation score using activation function logistic and 9 nodes in the first hidden layer was 0.9106
+Average cross validation score using activation function logistic and 10 nodes in the first hidden layer was 0.9110000000000001
+
+The accuracy of predicting the whole training set after training on the whole training set was 0.9208
+
+3.4
+To optimize my parameters I first tested different dimensions for the SVD with different activation functions, maintaining 10 nodes in the first hidden layer.
+The best resulting function (based on accuracy) was the relu function with dimensions=300. I then proceeded to test different number of nodes
+in the first hidden layer (1-10). Ultimately 7 nodes in the first hidden layer returned the best accuracy based on the cross-validation process, 
+with a score of 0.9376. The data is listed below:
+
+Dimensions = 50
+Average cross validation score using activation function identity and 10 nodes in the first hidden layer was 0.9149
+Average cross validation score using activation function logistic and 10 nodes in the first hidden layer was 0.9030999999999999
+Average cross validation score using activation function tanh and 10 nodes in the first hidden layer was 0.9135
+Average cross validation score using activation function relu and 10 nodes in the first hidden layer was 0.9113
+
+Dimensions = 100
+Average cross validation score using activation function identity and 10 nodes in the first hidden layer was 0.9265000000000001
+Average cross validation score using activation function logistic and 10 nodes in the first hidden layer was 0.9158999999999999
+Average cross validation score using activation function tanh and 10 nodes in the first hidden layer was 0.9269000000000001
+Average cross validation score using activation function relu and 10 nodes in the first hidden layer was 0.9250999999999999
+
+Dimensions = 200
+Average cross validation score using activation function identity and 10 nodes in the first hidden layer was 0.9244
+Average cross validation score using activation function logistic and 10 nodes in the first hidden layer was 0.9218000000000002
+Average cross validation score using activation function tanh and 10 nodes in the first hidden layer was 0.9334
+Average cross validation score using activation function relu and 10 nodes in the first hidden layer was 0.9308
+
+Dimensions = 300
+Average cross validation score using activation function identity and 10 nodes in the first hidden layer was 0.9241000000000001
+Average cross validation score using activation function logistic and 10 nodes in the first hidden layer was 0.9258000000000001
+Average cross validation score using activation function tanh and 10 nodes in the first hidden layer was 0.9229
+Average cross validation score using activation function relu and 10 nodes in the first hidden layer was 0.9336
+
+Using relu and dimensions=300:
+Average cross validation score using activation function relu and 1 nodes in the first hidden layer was 0.9256
+Average cross validation score using activation function relu and 2 nodes in the first hidden layer was 0.9249999999999998
+Average cross validation score using activation function relu and 3 nodes in the first hidden layer was 0.9365
+Average cross validation score using activation function relu and 4 nodes in the first hidden layer was 0.9259000000000001
+Average cross validation score using activation function relu and 5 nodes in the first hidden layer was 0.9352
+Average cross validation score using activation function relu and 6 nodes in the first hidden layer was 0.9372999999999999
+Average cross validation score using activation function relu and 7 nodes in the first hidden layer was 0.9376
+Average cross validation score using activation function relu and 8 nodes in the first hidden layer was 0.9251999999999999
+Average cross validation score using activation function relu and 9 nodes in the first hidden layer was 0.9277
+Average cross validation score using activation function relu and 10 nodes in the first hidden layer was 0.9343999999999999
+
+The accuracy of predicting the whole training set after training on the whole training set was 0.9842
+
+3.5
+The top 5 topics' top 20 words were:
+['the', 'and', 'to', 'was', 'it', 'we', 'of', 'is', 'for', 'my', 'in', 'they', 'this', 'that', 'you', 'with', 'not', 'food', 'on', 'have']
+['we', 'was', 'our', 'were', 'us', 'she', 'he', 'to', 'had', 'minutes', 'told', 'said', 'her', 'came', 'asked', 'after', 'didn', 'got', 'back', 'ordered']
+['to', 'me', 'they', 'you', 'my', 'she', 'he', 'that', 'have', 'them', 'car', 'your', 'get', 'do', 'if', 'told', 'her', 'call', 'up', 'when']
+['we', 'our', 'great', 'and', 'us', 'always', 'are', 'friendly', 'is', 'love', 'service', 'amazing', 'staff', 'he', 'very', 'recommend', 'have', 'been', 'here', 'will']
+['was', 'and', 'my', 'great', 'she', 'very', 'he', 'me', 'her', 'friendly', 'amazing', 'recommend', 'hair', 'definitely', 'highly', 'service', 'professional', 'staff', 'his', 'had']
