@@ -1,0 +1,18 @@
+4.1.1
+Using a logistic regression model, I observed a MSE of 0.8186528497409327 and a Pearson correlation of -0.04553821588408167.
+
+4.1.2
+Using two new features, average word length and average sentence length, I observed an improved MSE of 0.8031088082901554 and
+an improved Pearson correlation of 0.02440071417168303. Looking at the summaries, I theorized that perhaps more grammatical
+documents would feature more complex words/sentences given the skill of the author, so I added average word and sentence length
+to the feature vectors.
+
+4.2.1
+Using a logistic regression model, I observed a MSE of 0.9326424870466321 and a Pearson correlation 
+of -0.0057935577448653556.
+
+4.2.2
+Using two new features, named entity frequency and number of repeated named entities, I observed an improved MSE of 0.844559585492228
+and an improved Pearson correlation of 0.09775132275132276. I chose these new features based on the theory that redundant summaries will
+repeat named entities multiple times instead of using pronouns for example.
+
