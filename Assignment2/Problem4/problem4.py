@@ -10,6 +10,9 @@ import numpy as np
 
 nlp = spacy.load("en_core_web_sm")
 
+import neuralcoref
+neuralcoref.add_to_pipe(nlp)
+
 
 def getGrammaticalityFeatureVectors(summariesWithGrammarScore, useExtraFeatures=False):
     featureVectors = []
@@ -144,6 +147,40 @@ def getNonRedundancyFeatureVectors(summariesWithNonRedundancyScore, word2vec, us
 
     return featureVectors, targetLabels
 
+
+def getCoherenceFeatureVectors(summariesWithCoherenceScores):
+    featureVectors = []
+    targetLabels = []
+
+    for summaryWithCoherenceScore in summariesWithCoherenceScores:
+        summary = summaryWithCoherenceScore[0]
+        docCoherence = summaryWithCoherenceScore[1]
+
+        summaryDoc = nlp(summary)
+
+        chunkFrequency = {}
+        for chunk in summaryDoc.noun_chunks:
+            chunk = chunk.text
+
+            if chunk in chunkFrequency:
+                chunkFrequency[chunk] = chunkFrequency[chunk] + 1
+            else:
+                chunkFrequency[chunk] = 1
+
+        repeatedChunks = 0
+        for _, freq in chunkFrequency.items():
+            if freq > 1:
+                repeatedChunks += 1
+
+        totalCoreferredEntities = len(summaryDoc._.coref_clusters)
+
+        featureVector = [repeatedChunks, totalCoreferredEntities]
+
+        featureVectors.append(featureVector)
+        targetLabels.append(docCoherence)
+
+    return featureVectors, targetLabels
+
 # ----------- Start 4.1
 
 # # read train data
@@ -238,8 +275,54 @@ def getNonRedundancyFeatureVectors(summariesWithNonRedundancyScore, word2vec, us
 # # evaluate
 # mse = mean_squared_error(testTargetLabels, testDataPredictions)
 # pearson, _ = pearsonr(testTargetLabels, testDataPredictions)
-
 # print(mse)
 # print(pearson)
 
-# ------------ End 4.2
+# ------------------- End 4.2
+
+# ------------------- Start 4.3
+
+# # read train data
+# with open("./Problem4/summary_quality/train_data.json", 'r') as fin:
+#     trainMap = json.load(fin)
+
+# trainSummariesWithCoherenceScores = []
+# for fileName in trainMap.keys():
+#     docCoherence = trainMap[fileName]['coherence']
+
+#     with open("./Problem4/summary_quality/summaries/" + fileName, encoding="latin-1") as summaryFile:
+#         summary = summaryFile.read()
+
+#     trainSummariesWithCoherenceScores.append((summary, int(docCoherence)))
+
+# # read test data
+# with open("./Problem4/summary_quality/test_data.json", 'r') as fin:
+#     testMap = json.load(fin)
+
+# testSummariesWithCoherenceScores = []
+# for fileName in testMap.keys():
+#     docCoherence = testMap[fileName]['coherence']
+
+#     with open("./Problem4/summary_quality/summaries/" + fileName, encoding="latin-1") as summaryFile:
+#         summary = summaryFile.read()
+
+#     testSummariesWithCoherenceScores.append((summary, int(docCoherence)))
+
+
+# # train model
+# trainFeatureVectors, trainTargetLabels = getCoherenceFeatureVectors(trainSummariesWithCoherenceScores)
+# model = LogisticRegression(solver='lbfgs', multi_class='auto', max_iter=100)
+# model.fit(trainFeatureVectors, trainTargetLabels)
+
+# # test model
+# testFeatureVectors, testTargetLabels = getCoherenceFeatureVectors(testSummariesWithCoherenceScores)
+# testDataPredictions = model.predict(testFeatureVectors)
+
+# # evaluate
+# mse = mean_squared_error(testTargetLabels, testDataPredictions)
+# pearson, _ = pearsonr(testTargetLabels, testDataPredictions)
+# print(mse)
+# print(pearson)
+
+
+# ------- End 4.3

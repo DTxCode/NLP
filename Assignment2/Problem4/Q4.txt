@@ -16,3 +16,7 @@ Using two new features, named entity frequency and number of repeated named enti
 and an improved Pearson correlation of 0.09775132275132276. I chose these new features based on the theory that redundant summaries will
 repeat named entities multiple times instead of using pronouns for example.
 
+4.3
+Using a logistic regression model, my predictions for the test data were all -1. 
+This resulted in the strange MSE of 1.2124352331606219 and an undefined Pearson correlation, as the correlation is undefined
+when one of the two data sets is constant.
