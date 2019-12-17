@@ -7,4 +7,4 @@ A collection of NLP projects, including:
 - HMM sentence generation
 - sentiment analysis
 - trigram language model
-- depenedency parser
+- dependency parser
