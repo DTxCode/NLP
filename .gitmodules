@@ -1,0 +1,3 @@
+[submodule "reddit_nsfw_classifier"]
+	path = reddit_nsfw_classifier
+	url = git@github.com:SonalSingh93/reddit_nsfw_classifier.git
